@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- to check attribute value from import -->
+    <preference for="Test\Task\Api\CustomerAttributeValidatorInterface" type="Test\Task\Model\CustomerAttributeValidator" />
+
+    <!-- to add custom customer attribute value to 'customer' section -->
+    <type name="\Magento\Customer\CustomerData\Customer">
+        <plugin name="test_task_customer_data_plugin" type="Test\Task\Plugin\Customer\CustomerData\SectionSource"
+                sortOrder="100" disabled="false"/>
+    </type>
+</config>

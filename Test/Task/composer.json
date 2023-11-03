@@ -1,0 +1,21 @@
+{
+    "name": "test/task",
+    "description": "Add new customer attribute, edit via frontend/backend forms and GraphQl, show on frontend with full page cache enabled",
+    "type": "magento2-module",
+    "license": [],
+    "version": "1.0.0",
+    "require": {
+        "php": "~8.1.0||~8.2.0",
+        "magento/module-customer-graph-ql": "100.4.*",
+        "magento/module-customer": "103.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Test\\Task\\": ""
+        }
+    }
+}
+

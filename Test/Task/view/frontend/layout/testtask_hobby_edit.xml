@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Edit Hobby</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="customer-hobby" template="Test_Task::customer/account/edit-hobby.phtml" >
+                <arguments>
+                    <argument name="customer_hobby_view_model" xsi:type="object">Test\Task\ViewModel\CustomerHobby</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

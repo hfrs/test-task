@@ -1,0 +1,7 @@
+type Customer {
+    hobby: Int @doc(description: "Customer's hobby attribute")
+}
+
+input CustomerUpdateInput @doc(description: "An input object for updating a customer.") {
+    hobby: Int @doc(description: "Customer's hobby attribute")
+ }
